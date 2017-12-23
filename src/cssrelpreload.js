@@ -37,6 +37,7 @@
 		}
 
 		// bind load handlers to enable media
+		link.onload = null;
 		if( link.addEventListener ){
 			link.addEventListener( "load", enableStylesheet );
 		} else if( link.attachEvent ){
